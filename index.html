@@ -49,8 +49,12 @@
                         <li><a href="#Experience">Experience</a></li>
                         <li><a href="#portifilo">Portifilo</a></li>
                         <li><a href="#Contact">Contact</a></li>
-                        <li><button id="btn">change mode</button></li>
+                        
+                        
                     </ul>
+                    <div class="btn_container"><button id="btn"> dark mode</button>
+                        <button id="btn_light" class="active">light mode</button>
+                    </div>
                 </div>
 
           </div>
@@ -430,8 +434,21 @@ var btn=document.getElementById("btn");
         document.querySelector('link[rel="stylesheet"]').href="css/darkmode2.css";
     
     }
-
-
+    var btn=document.getElementById("btn");
+    btn_light==document.getElementById("btn_light");
+    btn.onclick=function(){
+        document.querySelector('link[rel="stylesheet"]').href="css/darkmode2.css";
+        btn_light.classlist.remove(".active");
+        btn.classlist.add(".active");
+    
+    }
+   
+    btn_light.onclick=function(){
+        document.querySelector('link[rel="stylesheet"]').href="css/style.css";
+        btn.classlist.remove(".active");
+        btn_light.classlist.add(".active");
+    
+    }
  
 
 </script>
