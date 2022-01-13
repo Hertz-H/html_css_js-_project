@@ -90,6 +90,26 @@ padding:20px;
 font-weight: bold;
 color: var(--main_color);
 }
+.btn_container{
+    margin-top:30px;
+    display: flex;
+    justify-content: space-between;
+}
+#btn,#btn_light{
+    color: var(--main_color);
+    background-color: transparent;
+    border: none;
+    padding: 5px;
+    outline: 2px solid var(--main_color);
+    border-radius: 2px;
+}
+#btn:hover,#btn_light:hover{
+    color: #eee;
+    
+}
+.active{
+    color: #eee !important;
+}
 .logo{
     color: var(--main_color);
     font-size: 1.5rem;
