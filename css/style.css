@@ -509,12 +509,11 @@ article img{
 .img_con img{
     width: 100%;
     margin-bottom: 10px;
-    transform: scale(1);
     transition: all .2s;
 }
-.img_con img:hover{
+/* .img_con img:hover{
     transform: scale(1.1);
-}
+} */
 
 .social_links {
 list-style: none;
