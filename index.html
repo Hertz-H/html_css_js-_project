@@ -49,6 +49,7 @@
                         <li><a href="#Experience">Experience</a></li>
                         <li><a href="#portifilo">Portifilo</a></li>
                         <li><a href="#Contact">Contact</a></li>
+                        <li><button id="btn">change mode</button></li>
                     </ul>
                 </div>
 
@@ -238,7 +239,7 @@
 
             <div class="contactMe_cont">
              <div class="contact_info">
-               <div class="img_con"> <img src="img/contact1.png" alt=""></div>
+               <div class="img_con"> <img  id="affect_img"src="img/contact1.png" alt=""></div>
                 <article>
                    <h3>Contact Info</h3> 
                    <p>I am available for freelance work. Contact  me via and call in to my account.</p>
@@ -286,7 +287,16 @@
     var name  =document.getElementById("name");
     var email  =document.getElementById("email");
     var message  =document.getElementById("message");
- 
+    var affect_img=document.getElementById("affect_img");
+    affect_img.onmouseenter= function(){
+        affect_img.style.transitionDuration="2s";
+        affect_img.style.transform="scale(1.1)";
+        
+        }    
+        affect_img.onmouseleave= function(){
+        affect_img.style.transform="scale(1)";
+        }    
+        
     burger_icon.addEventListener('click',()=>{
         
         left_to_right_menu.style.right="0";
@@ -415,7 +425,11 @@ else{
 
 });
  
-
+var btn=document.getElementById("btn");
+    btn.onclick=function(){
+        document.querySelector('link[rel="stylesheet"]').href="css/darkmode2.css";
+    
+    }
 
 
  
